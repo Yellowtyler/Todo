@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Note
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <h2 class="text-primary">Create Note</h2>
+        <hr/>
+    </div>
+    <div class="mb-3">
+        <label asp-for="content"></label>
+        <input asp-for="content" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Note</button>
+    <a asp-controller="Note" asp-action="Index" class="btn btn-secondary">Back To List</a>
+</form>
